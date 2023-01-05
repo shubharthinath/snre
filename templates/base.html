@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{% static 'css/all.css' %}" />
     <!-- Bootstrap -->
@@ -13,24 +13,23 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <!-- Lightbox -->
     <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}" />
-    <title>SN Real Estate</title>
+
+    <title>BT Real Estate {% block title %}{% endblock %}</title>
   </head>
 
   <body>
     <!-- Top Bar -->
     {% include 'partials/_topbar.html' %}
-    <!-- Nav Bar -->
+    <!-- NavBar -->
     {% include 'partials/_navbar.html' %}
-
     <!-- Main Content -->
     {% block content %} {% endblock %}
-
     <!-- Footer -->
     {% include 'partials/_footer.html' %}
 
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/lightbox.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %} "></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %} "></script>
+    <script src="{% static 'js/lightbox.min.js' %} "></script>
+    <script src="{% static 'js/main.js' %} "></script>
   </body>
 </html>
