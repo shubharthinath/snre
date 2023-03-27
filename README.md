@@ -1,1 +1,1 @@
-Real Estate Application using Django and PostGres.
+A Django-based real estate application with a custom admin area, full search functionality, and user authentication 
